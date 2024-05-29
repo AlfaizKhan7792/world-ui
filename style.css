@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+
+.container-main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #3F666A;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.container-parent{    
+    width: 95vw;
+    height: 90vh;
+    background-color: #1A2C2D;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.container-parent .nav{
+    width: 90%;
+    color: white;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav button{
+    text-decoration: none;
+    color: white;
+}
+.co .o{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+/* nav closed */
+
+/* content-part start */
+.content-part{
+    width: 90%;
+    height: auto;
+}
+.content-part .dtgd{
+    width: 18%;
+    margin-left: -25px;
+    height: 48vh;
+    background-color: crimson;
+}
+.dtgd h1{
+    color: white;
+}
+
+.content-part .dtgd:first-child{
+    background-color: #000;
+    position: relative;
+    z-index: 3;
+}
+.content-part .dtgd:nth-child(2){
+    position: relative;
+    z-index: 2;
+    background-image: url('https://m.media-amazon.com/images/I/91EjyUc0ZTL._SL1500_.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.content-part .dtgd:last-child{
+    background-image: url('https://pbs.twimg.com/media/DQX84XyUQAIJzu2?format=jpg&name=large');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+/* content-part closed */
+
+/* footer start */
+.footer{
+    width: 90%;
+    color: white;
+}
+.footer p{
+    font-size: 12px;
+}
+.ia .i{
+    width: 35px;
+    height: 35px;
+    margin-left: -10px;
+}
+.ia .i img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+}
+/* footer closed */
+
+/* Responsive @768px */
+@media (max-width: 768px) {
+   .nav ul li{
+    display: none;
+   }
+   .content-part{
+    width: 100%;
+    flex-wrap: wrap;
+   }
+   .content-part .dtgd{
+    width: calc(100% / 3);
+   }
+    .footer{
+        flex-wrap: wrap;
+    }
+    .footer .f-p{
+        display: none;
+    }
+}
